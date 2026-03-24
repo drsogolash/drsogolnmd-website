@@ -3911,46 +3911,48 @@ solutions." />
 
 
 
-<section style="background-color:#ede8e0; padding:80px 40px; border-top:1px solid rgba(45,42,38,0.08);">
-  <div style="max-width:1000px; margin:0 auto; display:grid; grid-template-columns:1fr 1.6fr; gap:80px; align-items:start;">
+<section class="dr-form-section" style="background-color:#ece4da; padding:80px 40px;">
+  <div class="dr-form-inner" style="max-width:1000px; margin:0 auto; display:grid; grid-template-columns:1fr 1.6fr; gap:80px; align-items:start;">
     <div>
       <p style="font-family:Marcellus,serif; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:#7a6e64; margin:0 0 16px;">Ready to Start?</p>
-      <h2 style="font-family:Marcellus,serif; font-size:clamp(1.8rem,3vw,2.4rem); font-weight:400; color:#2d2a26; margin:0 0 24px; line-height:1.2;">Contact Us</h2>
-      <p style="font-family:PT Serif,serif; font-size:15px; color:#5a4a3a; line-height:1.9; margin:0 0 32px; opacity:0.88;">Interested in working together? Fill out some info and we will be in touch shortly. We can't wait to hear from you!</p>
-      <div style="padding-top:24px; border-top:1px solid rgba(45,42,38,0.12);">
-        <p style="font-family:Marcellus,serif; font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:#7a6e64; margin:0 0 6px;">Email</p>
-        <a href="mailto:hello@drsogolnmd.com" style="font-family:PT Serif,serif; font-size:14px; color:#2d2a26; text-decoration:none; border-bottom:1px solid rgba(45,42,38,0.3);">hello@drsogolnmd.com</a>
+      <h2 style="font-family:Marcellus,serif; font-size:clamp(1.8rem,3vw,2.4rem); font-weight:400; color:#36302a; margin:0 0 24px; line-height:1.2;">Contact Us</h2>
+      <p style="font-family:PT Serif,serif; font-size:15px; color:#36302a; line-height:1.9; margin:0 0 32px; opacity:0.85;">Interested in working together? Fill out some info and we will be in touch shortly. We can't wait to hear from you!</p>
+      <div style="padding-top:24px; border-top:1px solid rgba(54,48,42,0.15);">
+        <p style="font-family:PT Serif,serif; font-size:12px; letter-spacing:0.05em; color:#36302a; opacity:0.6; margin:0 0 6px;">Email</p>
+        <a href="mailto:hello@drsogolnmd.com" style="font-family:PT Serif,serif; font-size:14px; color:#36302a; text-decoration:none; border-bottom:1px solid rgba(54,48,42,0.3);">hello@drsogolnmd.com</a>
       </div>
     </div>
     <div>
-      <form action="https://formsubmit.co/hello@drsogolnmd.com" method="POST" class="dr-form" style="display:flex; flex-direction:column; gap:18px;">
+      <form action="https://formsubmit.co/hello@drsogolnmd.com" method="POST" class="dr-form" style="display:flex; flex-direction:column; gap:20px;">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_subject" value="New inquiry from Homepage">
-        <div style="display:flex; gap:14px;">
-          <div style="flex:1;">
-            <label style="display:block; font-family:Marcellus,serif; font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:#7a6e64; margin-bottom:8px;">First Name <span style="color:#c0392b;">*</span></label>
-            <input type="text" name="first_name" required style="width:100%; padding:12px 14px; border:1px solid rgba(45,42,38,0.25); background:transparent; font-size:14px; font-family:PT Serif,serif; color:#2d2a26; box-sizing:border-box; outline:none;" />
+        <div>
+          <label>Name</label>
+          <div style="display:flex; gap:12px;">
+            <div style="flex:1;">
+              <label style="font-size:13px; opacity:0.75; margin-bottom:6px;">First Name <span class="req">(required)</span></label>
+              <input type="text" name="first_name" required />
+            </div>
+            <div style="flex:1;">
+              <label style="font-size:13px; opacity:0.75; margin-bottom:6px;">Last Name <span class="req">(required)</span></label>
+              <input type="text" name="last_name" required />
+            </div>
           </div>
-          <div style="flex:1;">
-            <label style="display:block; font-family:Marcellus,serif; font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:#7a6e64; margin-bottom:8px;">Last Name <span style="color:#c0392b;">*</span></label>
-            <input type="text" name="last_name" required style="width:100%; padding:12px 14px; border:1px solid rgba(45,42,38,0.25); background:transparent; font-size:14px; font-family:PT Serif,serif; color:#2d2a26; box-sizing:border-box; outline:none;" />
-          </div>
         </div>
         <div>
-          <label style="display:block; font-family:Marcellus,serif; font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:#7a6e64; margin-bottom:8px;">Email <span style="color:#c0392b;">*</span></label>
-          <input type="email" name="email" required style="width:100%; padding:12px 14px; border:1px solid rgba(45,42,38,0.25); background:transparent; font-size:14px; font-family:PT Serif,serif; color:#2d2a26; box-sizing:border-box; outline:none;" />
+          <label>Email <span class="req">(required)</span></label>
+          <input type="email" name="email" required />
         </div>
         <div>
-          <label style="display:block; font-family:Marcellus,serif; font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:#7a6e64; margin-bottom:8px;">Message <span style="color:#c0392b;">*</span></label>
-          <textarea name="message" required rows="5" style="width:100%; padding:12px 14px; border:1px solid rgba(45,42,38,0.25); background:transparent; font-size:14px; font-family:PT Serif,serif; color:#2d2a26; box-sizing:border-box; resize:vertical; outline:none;"></textarea>
+          <label>Message <span class="req">(required)</span></label>
+          <textarea name="message" required rows="6"></textarea>
         </div>
         <div>
-          <button type="submit" style="background-color:#2d2a26; color:#f5f0ea; border:none; padding:14px 36px; font-size:11px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; cursor:pointer; font-family:Marcellus,serif;">SEND MESSAGE</button>
+          <button type="submit">Send</button>
         </div>
       </form>
     </div>
   </div>
-  <style>@media(max-width:768px){div[style*="grid-template-columns:1fr 1.6fr"]{grid-template-columns:1fr!important;gap:40px!important;}}</style>
 </section>
 
   

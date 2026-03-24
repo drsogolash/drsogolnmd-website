@@ -1154,30 +1154,33 @@ out via email or phone for personalized holistic health services." />
       <!-- Right: form -->
       <div>
         <form action="https://formsubmit.co/hello@drsogolnmd.com" method="POST" class="dr-form" style="display:flex; flex-direction:column; gap:20px;">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="New inquiry from drsogolnmd.com">
-          <div style="display:flex; gap:16px;">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New inquiry from Contact page">
+        <div>
+          <label>Name</label>
+          <div style="display:flex; gap:12px;">
             <div style="flex:1;">
-              <label style="display:block; font-family: Marcellus, serif; font-size:11px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#7a6e64; margin-bottom:8px;">First Name <span style="color:#c0392b;">*</span></label>
-              <input type="text" name="first_name" required style="width:100%; padding:12px 16px; border:1px solid rgba(45,42,38,0.25); background:transparent; font-size:14px; font-family: PT Serif, serif; color:#2d2a26; box-sizing:border-box;" />
+              <label style="font-size:13px; opacity:0.75; margin-bottom:6px;">First Name <span class="req">(required)</span></label>
+              <input type="text" name="first_name" required />
             </div>
             <div style="flex:1;">
-              <label style="display:block; font-family: Marcellus, serif; font-size:11px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#7a6e64; margin-bottom:8px;">Last Name <span style="color:#c0392b;">*</span></label>
-              <input type="text" name="last_name" required style="width:100%; padding:12px 16px; border:1px solid rgba(45,42,38,0.25); background:transparent; font-size:14px; font-family: PT Serif, serif; color:#2d2a26; box-sizing:border-box;" />
+              <label style="font-size:13px; opacity:0.75; margin-bottom:6px;">Last Name <span class="req">(required)</span></label>
+              <input type="text" name="last_name" required />
             </div>
           </div>
-          <div>
-            <label style="display:block; font-family: Marcellus, serif; font-size:11px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#7a6e64; margin-bottom:8px;">Email <span style="color:#c0392b;">*</span></label>
-            <input type="email" name="email" required style="width:100%; padding:12px 16px; border:1px solid rgba(45,42,38,0.25); background:transparent; font-size:14px; font-family: PT Serif, serif; color:#2d2a26; box-sizing:border-box;" />
-          </div>
-          <div>
-            <label style="display:block; font-family: Marcellus, serif; font-size:11px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#7a6e64; margin-bottom:8px;">Message <span style="color:#c0392b;">*</span></label>
-            <textarea name="message" required rows="6" style="width:100%; padding:12px 16px; border:1px solid rgba(45,42,38,0.25); background:transparent; font-size:14px; font-family: PT Serif, serif; color:#2d2a26; box-sizing:border-box; resize:vertical;"></textarea>
-          </div>
-          <div>
-            <button type="submit" style="background-color:#2d2a26; color:#f5f0ea; border:none; padding:15px 40px; font-size:11px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; cursor:pointer; font-family: Marcellus, serif;">SEND MESSAGE</button>
-          </div>
-        </form>
+        </div>
+        <div>
+          <label>Email <span class="req">(required)</span></label>
+          <input type="email" name="email" required />
+        </div>
+        <div>
+          <label>Message <span class="req">(required)</span></label>
+          <textarea name="message" required rows="6"></textarea>
+        </div>
+        <div>
+          <button type="submit">Send</button>
+        </div>
+      </form>
       </div>
 
     </div>

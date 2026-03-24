@@ -2,44 +2,24 @@
    Dr. Sogol NMD — Design Improvements
    ============================================================ */
 
-/* --- NAV: hover states & active link --- */
-.header-nav-item a,
-.header-nav-folder-title {
+/* --- NAV: hover underline --- */
+.header-nav-item a {
   position: relative;
   transition: opacity 0.2s ease;
 }
 .header-nav-item a::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 1px;
+  bottom: -3px; left: 0;
+  width: 0; height: 1px;
   background: currentColor;
   transition: width 0.25s ease;
 }
 .header-nav-item a:hover::after { width: 100%; }
 .header-nav-item a:hover { opacity: 0.7; }
 
-/* --- BUTTONS: smoother, consistent style --- */
-.sqs-block-button-element,
-.btn,
-[class*="button"] {
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease !important;
-}
-.sqs-block-button-element:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12) !important;
-}
-
-/* --- SECTIONS: breathing room --- */
-.page-section {
-  transition: opacity 0.3s ease;
-}
-
-/* --- IMAGES: subtle rounded corners & shadow on cards --- */
-.sqs-block-image img,
-.intrinsic img {
+/* --- IMAGES: subtle hover zoom --- */
+.sqs-block-image img, .intrinsic img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .sqs-block-image:hover img {
@@ -47,57 +27,111 @@
   box-shadow: 0 8px 32px rgba(0,0,0,0.10);
 }
 
-/* --- FOOTER: tighten & polish --- */
-#footer-sections {
-  border-top: 1px solid rgba(45,42,38,0.12);
-}
-#footer-sections h4 {
-  letter-spacing: 0.08em;
-  margin-bottom: 12px;
-}
+/* --- FOOTER: polish --- */
+#footer-sections { border-top: 1px solid rgba(54,48,42,0.12); }
+#footer-sections h4 { letter-spacing: 0.05em; margin-bottom: 12px; }
 #footer-sections p, #footer-sections a {
-  font-size: 13px;
-  line-height: 1.8;
-  opacity: 0.75;
-  transition: opacity 0.2s;
+  font-size: 13px; line-height: 1.8; opacity: 0.75; transition: opacity 0.2s;
 }
 #footer-sections a:hover { opacity: 1; }
 
-/* --- TYPOGRAPHY: tighter tracking on headings --- */
-h1, h2, h3 {
-  letter-spacing: -0.01em;
-}
-
-/* --- SCROLLBAR: minimal & branded --- */
+/* --- SCROLLBAR --- */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(45,42,38,0.25); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(45,42,38,0.5); }
+::-webkit-scrollbar-thumb { background: rgba(54,48,42,0.25); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(54,48,42,0.5); }
 
-/* --- LINKS: consistent underline style --- */
-.sqs-html-content a {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  transition: opacity 0.2s;
+/* ── DR-FORM: match exact original Squarespace styling ─────────────────────── */
+.dr-form-section {
+  background-color: #ece4da !important;
+  padding: 80px 40px;
 }
-.sqs-html-content a:hover { opacity: 0.65; }
 
-/* --- CONTACT / ABOUT FORM: polished inputs --- */
-.dr-form input,
+.dr-form label {
+  display: block;
+  font-family: "PT Serif", serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #36302a !important;
+  margin-bottom: 8px;
+}
+
+.dr-form label span.req {
+  font-family: "PT Serif", serif;
+  font-size: 13px;
+  color: #36302a;
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+.dr-form input[type="text"],
+.dr-form input[type="email"],
 .dr-form textarea {
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  padding: 12px 18px !important;
+  border: 1px solid #36302a !important;
+  border-radius: 24px !important;
+  background: transparent !important;
+  font-family: "PT Serif", serif !important;
+  font-size: 15px !important;
+  color: #36302a !important;
+  box-sizing: border-box;
   outline: none;
+  transition: box-shadow 0.2s ease;
 }
+
+.dr-form textarea {
+  border-radius: 16px !important;
+  resize: vertical;
+}
+
 .dr-form input:focus,
 .dr-form textarea:focus {
-  border-color: #2d2a26 !important;
-  box-shadow: 0 0 0 2px rgba(45,42,38,0.08);
+  box-shadow: 0 0 0 3px rgba(54,48,42,0.1);
 }
-.dr-form button[type=submit] {
+
+.dr-form button[type="submit"] {
+  background-color: #36302a !important;
+  color: #f6f3ec !important;
+  border: none;
+  border-radius: 300px !important;
+  padding: 19px 32px !important;
+  font-family: "PT Serif", serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  cursor: pointer;
   transition: background-color 0.2s ease, transform 0.15s ease;
 }
-.dr-form button[type=submit]:hover {
-  background-color: #5a4a3a !important;
+
+.dr-form button[type="submit"]:hover {
+  background-color: #4a433c !important;
   transform: translateY(-1px);
+}
+
+/* Section heading inside dr-form section */
+.dr-form-section h2 {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  color: #36302a;
+}
+
+.dr-form-section p {
+  font-family: "PT Serif", serif;
+  color: #36302a;
+}
+
+.dr-form-section a {
+  color: #36302a;
+  font-family: "PT Serif", serif;
+}
+
+@media (max-width: 768px) {
+  .dr-form-section .dr-form-inner {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
 }

@@ -162,10 +162,16 @@
   transition: color 0.2s ease;
 }
 
-.press-logo--forbes  { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 700; }
-.press-logo--elle    { font-family: Georgia, "Times New Roman", serif; font-style: italic; letter-spacing: 0.15em; }
-.press-logo--foxnews { font-family: Arial, Helvetica, sans-serif; font-size: 15px; letter-spacing: 0.1em; }
-.press-logo--cnbc    { font-family: Arial, Helvetica, sans-serif; font-size: 15px; letter-spacing: 0.08em; }
+.press-logo--forbes       { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 700; }
+.press-logo--elle         { font-family: Georgia, "Times New Roman", serif; font-style: italic; letter-spacing: 0.15em; }
+.press-logo--time         { font-family: Georgia, "Times New Roman", serif; font-weight: 700; letter-spacing: 0.05em; }
+.press-logo--nypost       { font-family: Georgia, "Times New Roman", serif; font-weight: 700; }
+.press-logo--foxnews      { font-family: Arial, Helvetica, sans-serif; font-size: 15px; letter-spacing: 0.1em; }
+.press-logo--cnbc         { font-family: Arial, Helvetica, sans-serif; font-size: 15px; letter-spacing: 0.08em; }
+.press-logo--nbc          { font-family: Arial, Helvetica, sans-serif; font-size: 15px; letter-spacing: 0.12em; font-weight: 700; }
+.press-logo--everydayhealth { font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+.press-logo--newsnation   { font-family: Arial, Helvetica, sans-serif; font-size: 14px; letter-spacing: 0.05em; }
+.press-logo--drphil       { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 15px; }
 
 .press-logo:hover { color: #36302a; }
 
@@ -188,15 +194,26 @@
     padding: 60px 24px !important;
   }
 
-  /* Press bar */
+  /* Press bar — horizontal scroll on mobile */
   .press-bar-section {
-    padding: 28px 20px;
+    padding: 28px 0;
+  }
+  .press-bar-label {
+    padding: 0 20px;
   }
   .press-bar-logos {
-    gap: 10px 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    padding: 0 20px 8px;
+    gap: 8px 20px;
+    scrollbar-width: none;
   }
+  .press-bar-logos::-webkit-scrollbar { display: none; }
   .press-logo {
-    font-size: 15px;
+    font-size: 14px;
+    white-space: nowrap;
   }
 
   /* Global section padding reduction */

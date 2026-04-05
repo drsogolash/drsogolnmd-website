@@ -202,6 +202,72 @@
   line-height: 1;
 }
 
+/* ── HERO SECTION: mobile full-screen fix ───────────────────────────────── */
+@media (max-width: 767px) {
+  /* Make hero fill the screen */
+  [data-section-id="694898e137541d5c10e979af"] {
+    min-height: 100svh !important;
+    position: relative !important;
+  }
+
+  [data-section-id="694898e137541d5c10e979af"] .content-wrapper,
+  [data-section-id="694898e137541d5c10e979af"] .content {
+    min-height: 100svh !important;
+    position: relative !important;
+  }
+
+  /* Stretch hero image to fill entire section */
+  [data-section-id="694898e137541d5c10e979af"] .fe-block-7086b83a1999ba1086df {
+    position: absolute !important;
+    inset: 0 !important;
+    grid-area: unset !important;
+    z-index: 0 !important;
+  }
+
+  [data-section-id="694898e137541d5c10e979af"] .fe-block-7086b83a1999ba1086df .fluid-image-component-root,
+  [data-section-id="694898e137541d5c10e979af"] .fe-block-7086b83a1999ba1086df .fluid-image-animation-wrapper,
+  [data-section-id="694898e137541d5c10e979af"] .fe-block-7086b83a1999ba1086df .fluid-image-container,
+  [data-section-id="694898e137541d5c10e979af"] .fe-block-7086b83a1999ba1086df .sqs-block-content {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  [data-section-id="694898e137541d5c10e979af"] .fe-block-7086b83a1999ba1086df img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  /* Bring text to front, center it vertically */
+  [data-section-id="694898e137541d5c10e979af"] .fe-block-734dece8a766e4641140 {
+    position: absolute !important;
+    bottom: 10% !important;
+    left: 0 !important;
+    right: 0 !important;
+    grid-area: unset !important;
+    z-index: 2 !important;
+    text-align: center !important;
+    padding: 0 24px !important;
+  }
+
+  [data-section-id="694898e137541d5c10e979af"] .fe-block-734dece8a766e4641140 h1,
+  [data-section-id="694898e137541d5c10e979af"] .fe-block-734dece8a766e4641140 span {
+    text-align: center !important;
+    font-size: clamp(2rem, 9vw, 3.5rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Hero fluid engine grid: let it be the positioning context */
+  [data-section-id="694898e137541d5c10e979af"] .fluid-engine {
+    position: absolute !important;
+    inset: 0 !important;
+    display: block !important;
+  }
+}
+
 /* ── MOBILE OPTIMIZATIONS ──────────────────────────────────────────────── */
 @media (max-width: 768px) {
   /* Form section: stack columns */

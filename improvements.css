@@ -2,6 +2,27 @@
    Dr. Sogol NMD — Design Improvements
    ============================================================ */
 
+/* --- CART: hidden site-wide --- */
+.header-actions-action--cart,
+.sqs-cart-quantity,
+.cart-quantity-container,
+[href="/cart"] { display: none !important; }
+
+/* --- IMAGES: prevent collapsing fluid containers --- */
+.fluid-image-container,
+.sqs-image-content,
+.js-image-container {
+  min-height: 1px;
+}
+.fluid-image-component-root {
+  width: 100%;
+}
+.fluid-image-component-root img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
 /* --- NAV: hover underline --- */
 .header-nav-item a {
   position: relative;
